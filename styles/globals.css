@@ -1,0 +1,172 @@
+/* RESET & GLOBAL LAYOUT */
+body, html, #__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #080808 0%, #1b1b1b 100%);
+  color: #fff; /* Default text color */
+}
+
+/* TOP-LEVEL CONTAINER (Glass effect) */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* MAIN TITLE */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #e60000; /* Brand accent color */
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+/* SECTION CARD */
+.section-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* SUBHEADINGS */
+.section-title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ffffff33;
+  padding-bottom: 0.5rem;
+}
+
+/* Generic text for instructions or descriptions */
+.section-description {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* INPUT SECTIONS */
+.input-section {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-section input,
+.input-section select {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  min-width: 120px; 
+}
+
+.input-section input:focus,
+.input-section select:focus {
+  background: #ffffff20; 
+  box-shadow: 0 0 0 2px #e6000050; 
+}
+
+.input-section button {
+  background-color: #e60000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.input-section button:hover {
+  background-color: #e60000cc;
+  transform: translateY(-2px);
+}
+
+/* LISTS */
+.habit-list, .task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.habit-list li,
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff27; 
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.habit-list li:hover,
+.task-list li:hover {
+  background: #ffffff18;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: #ff4d4d;
+  color: #ffffff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #ffffff;
+  color: #e60000;
+  transform: scale(1.05);
+}
+
+/* CHART SECTION */
+.chart-container {
+  max-width: 600px;
+  margin: 1rem auto 0;
+}
+
+/* Canvas background styling */
+.chart-container canvas {
+  background: #ffffff10;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px auto;
+    padding: 1rem;
+  }
+  .section-card {
+    padding: 1rem;
+  }
+  .section-title {
+    font-size: 1.25rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
