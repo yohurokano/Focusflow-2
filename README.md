@@ -1,6 +1,6 @@
 # FocusFlow – Extended Habit & Task Tracker
 
-**Creator:** Ricardo Costa
+**Creator:** Phoebeology
 
 FocusFlow is an offline-friendly application for **tracking daily habits** and **managing tasks**. It features daily streak logic for habits, optional deadlines and priorities for tasks, and a built-in analytics dashboard to visualize completion trends.
 
